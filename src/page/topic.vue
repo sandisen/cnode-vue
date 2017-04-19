@@ -49,6 +49,7 @@
 						:reply-to="item.author.loginname" 
 						:reply-id="item.id" 
 						:topic-id="topicId"
+						@getTopic="getTopic"
 						@onReply="handleReply"></nv-reply>
 					</li>
 				</ul>

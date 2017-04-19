@@ -47,7 +47,7 @@
 				var v = this;
 				var data = {
 					accesstoken:localStorage.getItem('accesstoken'),
-					content:v.content + '<br/><br/><a class="form" href="https://github.com/soulcm/react-cnode-mobile">vue-cnode-mobile</a>',
+					content:v.content + '<br/><br/><a class="form" href="https://github.com/sandisen/cnode-vue">vue-cnode</a>',
 					reply_id:v.replyId
 				};
 				//发表评论
@@ -61,7 +61,8 @@
 						v.content = '';
 						//隐藏回复框
 						v.$emit('onReply');
-						v.$router.go();
+						v.$emit('getTopic');
+						//v.$router.go();
 					},
 					error:function(err){
 						console.log(err);
