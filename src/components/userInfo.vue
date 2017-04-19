@@ -70,7 +70,7 @@
 		methods:{
 			handleLoginOut(){
 				//刷新页面
-				this.$router.go();
+				this.$router.go(0);
 				//清除缓存
 				localStorage.removeItem('name');
 				localStorage.removeItem('url');

@@ -62,7 +62,7 @@
 						//隐藏回复框
 						v.$emit('onReply');
 						v.$emit('getTopic');
-						//v.$router.go();
+						v.$router.go(0);
 					},
 					error:function(err){
 						console.log(err);
