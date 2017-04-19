@@ -2,7 +2,7 @@
 
 > vue2.0+vue-router2.0+webpack+npm+es6
 
-![](./clipscreen/1.jpg)
+![](./clipscreen/0.jpg)
 
 知识点：
 * vue2
