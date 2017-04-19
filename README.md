@@ -43,23 +43,14 @@ npm test
 访问 localhost:8090
 
 ![全部](./clipscreen/1.jpg)
-
 ![精华](./clipscreen/3.jpg)
-
 ![详情](./clipscreen/4.jpg)
-
 ![未登录](./clipscreen/7.jpg)
-
 ![登录](./clipscreen/8.jpg)
-
 ![已登录](./clipscreen/2.jpg)
-
 ![点赞评论](./clipscreen/5.jpg)
-
 ![发布新话题](./clipscreen/6.jpg)
-
 ![用户中心](./clipscreen/9.jpg)
-
 ![消息](./clipscreen/10.jpg)
 
 # vue-cnode
