@@ -18,6 +18,7 @@ h4,
 h5,
 h6,
 p,
+span,
 button,
 a,
 input,
@@ -30,6 +31,7 @@ select {
   color: #000;
   border: none;
   -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   outline: none;
 }
 .logo {

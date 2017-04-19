@@ -38,6 +38,16 @@
 						//指定路由的跳转(可包含参数)，replace是替换当前路由，不会记录在history栈中
 						v.$router.replace({name:'index'});
 						//本地存储
+						if(typeof localStorage === 'object'){
+							try {
+						       localStorage.setItem('localStorage', 1);
+						       localStorage.removeItem('localStorage');
+						   } catch (e) {
+						       Storage.prototype._setItem = Storage.prototype.setItem;
+						       Storage.prototype.setItem = function() {};
+						       alert('您处于无痕浏览模式，请先关闭无痕浏览');
+						   }
+						}
 						window.localStorage.setItem('name', res.loginname);
 						window.localStorage.setItem('id', res.id);
 						window.localStorage.setItem('url', res.avatar_url);

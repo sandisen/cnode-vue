@@ -36,7 +36,7 @@
 				content:""
 			}
 		},
-		props:['replyId','replyTo','topicId','topicReplies'],
+		props:['replyId','replyTo','topicId'],
 		mounted(){
 			if(this.replyTo) {
 				this.content = '@'+this.replyTo;
@@ -59,11 +59,9 @@
 					success:function(res){
 						console.log(res);
 						v.content = '';
-						//更新话题评论数据
-						v.topicReplies.length++;
 						//隐藏回复框
 						v.$emit('onReply');
-						//v.$router.go();
+						v.$router.go();
 					},
 					error:function(err){
 						console.log(err);

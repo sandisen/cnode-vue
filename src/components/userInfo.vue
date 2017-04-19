@@ -8,9 +8,11 @@
 		</div>
 		<!-- 已登录 -->
 		<div v-else class="login_yes">
-			<img v-if="avatar_url" :src="avatar_url">
-			<span class="login_name" v-text="loginname"></span>
-			<span class="login_out" @click="handleLoginOut">退出</span>
+			<router-link :to="{name:'index',query:{tab:'all'}}">
+				<img v-if="avatar_url" :src="avatar_url">
+				<span class="login_name" v-text="loginname"></span>
+				<span class="login_out" @click="handleLoginOut">退出</span>
+			</router-link>
 		</div>
 	</div>
 </template>
@@ -37,9 +39,11 @@
 			height: 40px;
 			border-radius: 50%;
 			margin-right: 15px;
+			vertical-align: middle;
 		}
 		.login_name{
 			flex: 1;
+			margin-right: 5px;
 		}
 		.login_out{
 			color: #337ab7;
@@ -65,9 +69,13 @@
 		},
 		methods:{
 			handleLoginOut(){
+				//刷新页面
 				this.$router.go();
+				//清除缓存
 				localStorage.removeItem('name');
 				localStorage.removeItem('url');
+				localStorage.removeItem('id');
+				localStorage.removeItem('accesstoken');
 			}
 		}
 	}
