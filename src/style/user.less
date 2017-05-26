@@ -1,0 +1,114 @@
+.user_page{
+	padding-top:40px;
+	.info{
+		background-color: #e7e7e7;
+		padding:15px 0;
+		img{
+			border-radius: 50%;
+			width:100px;
+			height:100px;
+			border:3px solid #80bd01;
+			display: block;
+			margin:0 auto;
+		}
+		span.name{
+			font-size: 1.4rem;
+			text-align: center;
+			margin-top:5px;
+			display: block;
+		}
+		.bottom{
+			margin-top: 10px;
+			display: -webkit-flex;
+			display: flex;
+			.time{
+				text-align: center;
+				flex:1;
+			}
+			.score{
+				text-align: center;
+				color:#80bd01;
+				flex:1;
+			}
+		}
+	}
+	.user_active{
+		.tab{
+			display: flex;
+			display: -webkit-flex;
+			border-bottom: 1px solid #d4d4d4;
+			overflow: hidden;
+			.tab_item{
+				flex:1;
+				border-right:1px solid #d4d4d4;
+				text-align: center;
+				font-weight:700;
+				font-size: 1.6rem;
+				padding:10px 0;
+				&.active{
+					color:#80bd01;
+					border-bottom: 2px solid #80bd01;
+				}
+				&:last-child{
+					border-right:none;
+				}
+			}
+		}
+		.active_content{
+			display: -webkit-flex;
+			display: flex;
+			padding:10px;
+			border-bottom: 1px solid #f0f0f0;
+			.head{
+				img{
+					width:40px;
+					height:40px;
+					border-radius: 50%;
+					margin-right:15px;
+					border:2px solid #80bd01;
+				}
+			}
+			.right{
+				flex:1;
+				overflow: hidden;
+				.topic_title{
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					display: block;
+					font-weight:700;
+					font-size: 1.6rem;
+					color:#333;
+				}
+				.topic_bottom{
+					display: -webkit-flex;
+					display: flex;
+					margin-top:5px;
+					.name{
+						color:#626262;
+						flex:1;
+					}
+					.time{
+						color:#80bd01;
+						font-size: 1.2rem;
+					}
+				}
+			}
+		}
+		.no_data {
+        height: -webkit-calc(~'100vh - 90px');
+        height: calc(~'100vh - 90px');
+        text-align: center;
+        color:#d4d4d4;
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .icon-empty{
+	        	display: block;
+	        	font-size: 12.5rem;
+	        	color:#d4d4d4;
+        }
+	   }
+	}
+}

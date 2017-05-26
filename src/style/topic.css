@@ -1,0 +1,115 @@
+.topic_detail {
+  padding-top: 40px;
+}
+.topic_detail .topic_title {
+  padding: 5px;
+  margin: 15px 10px;
+  font-size: 1.8rem;
+  color: #2c3e50;
+  line-height: 1.5;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  border-bottom: 2px solid #ddd;
+}
+.topic_detail .author_info {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #34495e;
+  padding: 0 10px;
+}
+.topic_detail img.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.topic_detail .center {
+  flex: 1;
+}
+.topic_detail .center .author,
+.topic_detail .center .info {
+  display: block;
+  padding: 5px 0;
+}
+.topic_detail .right .tag {
+  color: #fff;
+  padding: 5px 6px;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  text-align: center;
+  display: block;
+  background-color: #80bd01;
+}
+.topic_detail .right .name {
+  padding: 5px 0;
+  display: block;
+}
+.topic_detail .topic_content {
+  padding: 10px;
+  margin-top: 15px;
+  border-bottom: 1px solid #d4d4d4;
+}
+.topic_detail .topic_reply .topic_total {
+  padding: 10px;
+  border-bottom: 1px solid #d4d4d4;
+  font-size: 1.6rem;
+}
+.topic_detail .topic_reply .topic_total strong {
+  color: #80bd01;
+}
+.topic_detail .topic_reply .reply_list li {
+  padding: 10px;
+  border-bottom: 1px solid #d4d4d4;
+}
+.topic_detail .topic_reply .reply_list li .user {
+  display: -webkit-flex;
+  display: flex;
+}
+.topic_detail .topic_reply .reply_list li .user .head {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: inline-block;
+}
+.topic_detail .topic_reply .reply_list li .user .info {
+  font-size: 1.3rem;
+  flex: 1;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+.topic_detail .topic_reply .reply_list li .user .info .left {
+  flex: 1;
+  display: -webkit-flex;
+  display: flex;
+  line-height: 20px;
+}
+.topic_detail .topic_reply .reply_list li .user .info .left .name {
+  margin-right: 10px;
+}
+.topic_detail .topic_reply .reply_list li .user .info .right {
+  display: flex;
+  display: -webkit-flex;
+  line-height: 20px;
+}
+.topic_detail .topic_reply .reply_list li .user .info .right .uped {
+  color: #80bd01;
+}
+.topic_detail .topic_reply .reply_list li .user .info .iconfont {
+  font-size: 18px;
+  color: #333;
+}
+.topic_detail .topic_reply .reply_list li .reply_content {
+  margin-top: 10px;
+}
+.topic_detail .topic_reply .reply_list li .reply_content img {
+  max-width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+.topic_detail .topic_reply .reply_list:last-child {
+  border-bottom: none;
+}

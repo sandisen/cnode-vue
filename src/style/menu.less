@@ -1,0 +1,41 @@
+nav.menu_bar{
+	position:fixed;
+	top:40px;
+	bottom:0;
+	left:-180px;
+	width:180px;
+	background-color: #fff;
+	transition: all .3s ease;
+	z-index:10;
+	&.show{
+		transform:translateX(180px);
+	}
+	.menu_list{
+		borer-top:1px solid #80bd01;
+		li.menu_item{
+			a:hover{
+				background-color: #80bd01;
+				color:#fff;
+			}
+			a{
+				display: block;
+				padding:14px 24px;
+				font-size: 1.4rem;
+				text-decoration: none;
+				i.iconfont{
+					margin-right:30px;
+					color:#333;
+				}
+				.message_count {
+		         position: absolute;
+		         color: red;
+		         left: 40px;
+		         top: 15px;
+			    }
+			}
+			&:nth-of-type(6){
+				border-top:1px solid #80bd01;
+			}
+		}
+	}
+}
